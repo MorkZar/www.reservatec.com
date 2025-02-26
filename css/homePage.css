@@ -1,0 +1,250 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color:white;
+    color: gray;
+}
+.header {
+    background-size:cover;
+    background-color: #3b0002;
+    display: flex;
+    justify-content: space-between;
+    align-items:stretch;
+    padding: 10px 20px;
+    height: 100px;
+}
+.header img {
+    margin: 0;
+    padding: 0;
+    display: block; /* Evita espacios debajo de la imagen */
+}
+.header-icons {
+    display: flex;
+    gap: 20px;
+    align-items:center;
+}
+.header-icons img {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+.nav-menu {
+    background-color:white;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.button1 {
+    display: flex;
+    align-items: center;
+    font-family: inherit;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 17px;
+    padding: 0.8em 1.3em 0.8em 0.9em;
+    color: white;
+    background: #ad5389;
+    background: linear-gradient(to right, #3b0002, #a8190c, #5c1205);
+    border: none;
+    letter-spacing: 0.05em;
+    border-radius: 16px;
+  }
+  
+  button svg {
+    margin-right: 3px;
+    transform: rotate(30deg);
+    transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+  }
+  
+  .button1 span {
+    transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+  }
+  
+  .button1:hover svg {
+    transform: translateX(5px) rotate(90deg);
+  }
+  
+  .button1:hover span {
+    transform: translateX(7px);
+  }
+
+
+.descripcion{
+    text-align: center;
+    text-decoration:wavy;
+}
+
+.descripcion p{
+    color: gray;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.descripcion h3{
+    color: gray;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    background-color:#3b0002;
+}
+.info {
+    max-width: 50%;
+}
+.info h3 {
+    margin-bottom: 5px;
+}
+.info a {
+    color: gray;
+    text-decoration: none;
+}
+.info a:hover {
+    text-decoration: underline;
+}
+.map {
+    width: 50%;
+}
+iframe {
+    width: 85%;
+    height: 250px;
+    border: none;
+}
+
+
+.carousel {
+    width: 640px;
+    height: auto;
+    margin-top: 20px;
+    margin: 50px auto 0;
+    overflow: hidden;
+}
+
+.carousel ul{
+    list-style: none;
+    display: flex;
+    animation: movimiento_carousel 12s infinite alternate ease-in-out;
+}
+
+@keyframes movimiento_carousel{
+    0%{transform: translate(0%);}
+    20%{transform: translate(0%);}
+
+    25%{transform: translate(-100%);}
+    45%{transform: translate(-100%);}
+
+    50%{transform: translate(-200%);}
+    70%{transform: translate(-200%);}
+
+    /*/
+    75%{transform: translate(-300%);}
+    100%{transform: translate(-300%);}
+    */
+}
+
+.card {
+    width: 190px;
+    height: 254px;
+    background: #3405a3;
+    border-radius: 15px;
+    box-shadow: 1px 5px 60px 0px #100a886b;
+    display: none; /* Oculta la tarjeta por defecto */
+}
+
+.card .card-border-top {
+    width: 60%;
+    height: 3%;
+    background: #6b64f3;
+    margin: auto;
+    border-radius: 0px 0px 15px 15px;
+}
+
+.card span {
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    display: block;
+    padding-top: 10px;
+    font-size: 16px;
+}
+
+.card .job {
+    font-weight: 400;
+    color: white;
+    display: block;
+    text-align: center;
+    padding-top: 3px;
+    font-size: 12px;
+}
+
+.card .img {
+    width: 70px;
+    height: 80px;
+    background: #6b64f3;
+    border-radius: 15px;
+    margin: auto;
+    margin-top: 25px;
+}
+
+.card button {
+    padding: 8px 25px;
+    display: block;
+    margin: auto;
+    border-radius: 8px;
+    border: none;
+    margin-top: 30px;
+    background: #6b64f3;
+    color: white;
+    font-weight: 600;
+}
+
+.card button:hover {
+    background: #534bf3;
+}
+
+.footer{
+position: relative;
+width: 100%;
+background-color:#3b0002;
+min-height: 100px;
+padding: 20px 50px;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+
+.social-icon{
+display: flex;
+justify-content: center;
+align-items: center;
+position: relative;
+margin: 10px 5px;
+flex-wrap: wrap;
+}
+
+.icon-element{
+list-style: none;
+}
+
+.icon{
+color:darkgray;
+font-size: 32px;
+display: inline-block;
+margin:  0 10px;
+transition: 0.5s;
+}
+
+.icon:hover{
+transform: translateY(-10px);
+}
