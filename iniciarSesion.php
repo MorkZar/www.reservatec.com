@@ -23,23 +23,4 @@ if(mysqli_num_rows($validar_login) > 0){
     header("location: inicioSesion.php");
     exit;
 }
-
-// Buscar en la tabla de administradores
-$validar_admin = mysqli_query($conexion, "SELECT * FROM administradores WHERE correo='$correo' AND contrasena='$pass'");
-
-if (mysqli_num_rows($validar_admin) > 0) {
-    $_SESSION['usuario'] = $correo;
-    $_SESSION['tipo_usuario'] = 'admin';
-    header("location: dashboard_admin.php");
-    exit;
-}else{
-    echo'
-    <script>
-    alert("Uusario no registrado");
-    </script>
-    ';
-    header("location: administracion.php");
-    exit;
-}
-
 ?>
