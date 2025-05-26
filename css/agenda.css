@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+.container {
+    display: flex;
+    width: 100%;
+}
+.sidebar {
+    width: 250px;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+.sidebar h2 {
+    font-size: 18px;
+    color: #333;
+}
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+.sidebar li {
+    margin: 10px 0;
+}
+.sidebar span {
+    margin-left: 10px;
+}
+.calendar-container {
+    flex-grow: 1;
+    padding: 20px;
+    background: #fafafa;
+}
+.back-btn {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+#calendar {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 100%;
+}
+
+.auditorio { color: purple }  
+.centro { color: rgb(212, 212, 38) }    
+.aula { color: rgb(48, 201, 48) }       
+.cafeteria { color: red } 
+.lobby { color: #FF8C33; }     
+
+span {
+display: inline-flex;
+align-items: center;
+}
+
+span img {
+margin-left: 8px; /* Ajusta el espacio entre el texto y la imagen */
+width: 30px; /* Ajusta el tamaño de la imagen */
+height: 30px; /* Ajusta el tamaño de la imagen */
+}
