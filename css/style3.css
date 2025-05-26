@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+}
+
+body{
+    background: linear-gradient(90deg, #3b0002,#3b0002);
+    padding: 20px;
+}
+
+.container-all{
+width: 100%;
+max-width: 1000px;
+margin: auto;
+margin-top: 100px;
+display: flex;
+border-radius: 20px;
+overflow: hidden;
+}
+
+.container-form{
+    width: 100%;
+    padding: 40px;
+    background: whitesmoke;
+}
+
+.logo{
+    width: 180px;
+    display: block;
+    margin: auto;
+}
+
+ .title{
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 300;
+    color: #62152d;
+ }
+
+.formulario__label {
+	display: block;
+	font-weight: 700;
+	padding: 10px;
+	cursor: pointer;
+}
+
+.formulario__grupo-input {
+	position: center;
+}
+
+.formulario__input {
+	width: 100%;
+	background: #fff;
+	border: 3px solid transparent;
+	border-radius: 3px;
+	height: 45px;
+	line-height: 45px;
+	padding: 0 40px 0 10px;
+	transition: .3s ease all;
+}
+
+.formulario__input:focus {
+	border: 3px solid #1ed12d;
+	outline: none;
+	box-shadow: 3px 0px 30px rgba(163,163,163, 0.4);
+}
+
+.formulario__input-error {
+	font-size: 12px;
+	margin-bottom: 0;
+	display: none;
+}
+
+.formulario__input-error-activo {
+	display: block;
+}
+
+.formulario__validacion-estado {
+	position: absolute;
+	right: 10px;
+	bottom: 15px;
+	z-index: 100;
+	font-size: 16px;
+	opacity: 0;
+}
+
+.formulario__mensaje {
+	height: 45px;
+	line-height: 45px;
+	background: #F66060;
+	padding: 0 15px;
+	border-radius: 3px;
+	display: none;
+}
+
+.formulario__mensaje-activo {
+	display: block;
+}
+
+.formulario__mensaje p {
+	margin: 0;
+}
+
+.formulario__grupo-btn-enviar {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.formulario__btn {
+	height: 45px;
+	line-height: 45px;
+	width: 30%;
+	background: #000;
+	color: #fff;
+	font-weight: bold;
+	border: none;
+	border-radius: 3px;
+	cursor: pointer;
+	transition: .1s ease all;
+}
+
+.formulario__btn:hover {
+	box-shadow: 3px 0px 30px rgba(163,163,163, 1);
+}
+
+.formulario__mensaje-exito {
+	font-size: 14px;
+	color: #0075FF;
+	display: none;
+}
+
+.formulario__mensaje-exito-activo {
+	display: block;
+}
+
+/* ----- -----  Estilos para Validacion ----- ----- */
+.formulario__grupo-correcto .formulario__validacion-estado {
+	color: #0075FF;
+	opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__label {
+	color: #bb2929;
+}
+
+.formulario__grupo-incorrecto .formulario__validacion-estado {
+	color: #bb2929;
+	opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__input {
+	border: 3px solid #bb2929;
+}
+
+/* Estilo para el contenedor del select */
+   .selectTipo {
+      width: 100%;
+  }
+
+  /* Estilo para el select */
+  .selectTipo select {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid white; /* Borde color guindo */
+      background-color: white;
+      color:#62152d; /* Color del texto guindo */
+      font-size: 16px;
+      appearance: none; /* Elimina el estilo por defecto del select */
+      cursor: pointer;
+      text-align: center;
+      background-color: white;
+  }
+
+  /* Estilo para las opciones */
+  .selectTipo select option {
+      background-color: white;
+      color: #800000; /* Color del texto guindo */
+  }
+
+ .campoAdicional{
+   display: none;
+ }
+
+ button{
+   width: 100%;
+   margin-top: 60px;
+ }
+
+ .buttonin {
+   font-size: 18px;
+   letter-spacing: 2px;
+   text-transform: uppercase;
+   display: inline-block;
+   text-align: center;
+   font-weight: bold;
+   padding: 0.7em 2em;
+   border: 3px solid #62152d;
+   border-radius: 2px;
+   position: relative;
+   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
+   color: #62152d;
+   text-decoration: none;
+   transition: 0.3s ease all;
+   z-index: 1;
+ }
+ .buttonin:before {
+   transition: 0.5s all ease;
+   position: absolute;
+   top: 0;
+   left: 50%;
+   right: 50%;
+   bottom: 0;
+   opacity: 0;
+   content: '';
+   background-color: #62152d;
+   z-index: -1;
+ }
+ 
+ .buttonin:hover, button:focus {
+   color: white;
+ }
+ 
+ .buttonin:hover:before, button:focus:before {
+   transition: 0.5s all ease;
+   left: 0;
+   right: 0;
+   opacity: 1;
+ }
+ 
+ .buttonin:active {
+   transform: scale(0.9);
+ }
+
+/* Estilo para el contenedor del enlace */
+.olvidar {
+  display: block; /* Hace que el span ocupe toda la línea */
+  text-align: center; /* Centra el texto horizontalmente */
+  margin-top: 20px; /* Margen superior de 20px */
+}
+
+/* Estilo para el enlace */
+.olvidar a {
+  color: #62152d; /* Color guindo */
+  text-decoration: none; /* Elimina el subrayado del enlace */
+  font-size: 16px; /* Tamaño de la fuente */
+  font-weight: bold; /* Texto en negrita */
+}
+
+ .text-footer{
+   display: block;
+   margin-top: 100px;
+   text-align: center;
+   color: #62152d;
+   font-weight: 300;
+}
+
+.text-footer a{
+   color: #62152d;
+   font-weight: 500;
+}
+
+ /* Imagen */
+
+ .container-image{
+    width: 100%;
+    background-image: url(../imagenes/tec.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 40px;
+    position: relative;
+ }
+
+.capa{
+   position: relative;
+   top: 80px;
+   color: white;
+   font-size: 300;
+   font-weight: 40px;
+}
+
+.footer{
+   position: relative;
+   width: 100%;
+   background-color:#3b0002;
+   min-height: 100px;
+   padding: 20px 50px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   }
+
+   .information{
+      color: gray;
+   }
+
+   .alert alert-success{
+         display: flex;
+         border-left: 30px;
+         justify-content: center;
+         align-items: center;
+         height: 100vh; /* Asegura que la alerta se centra verticalmente en toda la pantalla */
+   }
+
+ /* Responsive */
+
+ @media screen and (max-width: 800px) {
+
+    .container-image{
+        display: none;
+    }
+
+    .container-form{
+        margin: auto;
+        width: 100%;
+        background: white;
+    }
+ }
