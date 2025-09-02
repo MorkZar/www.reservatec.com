@@ -28,7 +28,7 @@ Descarga el repositorio desde GitHub o cópialo en tu máquina.
 STEP 2.Ubícalo dentro de la carpeta:
 C:\xampp\htdocs\reservatec
 
-3.Configurar la base de datos
+STEP 3.Configurar la base de datos
 Inicia XAMPP y activa los servicios Apache y MySQL.
 Abre http://localhost/phpmyadmin/.
 Crea una base de datos, por ejemplo:
